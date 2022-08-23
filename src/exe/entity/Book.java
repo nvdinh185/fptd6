@@ -18,7 +18,6 @@ public class Book extends Publication {
 	public void display() {
 		System.out.println("Book [" + this.getCommonInfo() + ",author=" + this.isbn + ", volumn=" + this.author
 				+ ", edition=" + this.publicationPlace + "]");
-
 	}
 
 	@Override
@@ -27,13 +26,14 @@ public class Book extends Publication {
 		String inputIsbn = "";
 		do {
 			System.out.println("Nhap isbn:");
-			if (Validation.checkValidIsbn(sc.nextLine())) {
+			inputIsbn = sc.nextLine();
+			if (Validation.checkValidIsbn(inputIsbn)) {
 				break;
 			}
 			System.out.println("Sai roi ban oi...");
 		} while (true);
 		this.isbn = inputIsbn;
-		System.out.println("Nhap author:");
+		// Nhap author
 		this.author = this.getAuthorList(sc);
 		System.out.println("Nhap publicationPlace:");
 		this.publicationPlace = sc.nextLine();

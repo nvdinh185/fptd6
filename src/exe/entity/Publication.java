@@ -14,22 +14,23 @@ public abstract class Publication {
 	}
 
 	public abstract void display();
+
 	public abstract void input(Scanner sc);
 
 	public String getCommonInfo() {
-		return "publicationYear=" + this.publicationYear 
-				+ ",publisher=" + this.publisher
-				+ ",publicationDate=" + this.publicationDate;
+		return "publicationYear=" + this.publicationYear + ",publisher=" + this.publisher + ",publicationDate="
+				+ this.publicationDate;
 	}
+
 	public void inputCommonInfo(Scanner sc) {
 		System.out.println("Nhap publicationYear:");
 		this.publicationYear = Integer.parseInt(sc.nextLine());
 		System.out.println("Nhap publisher:");
 		this.publisher = sc.nextLine();
-		System.out.println("Nhap publicationYear:");
+		System.out.println("Nhap publicationDate:");
 		this.publicationDate = DateUtil.convertStrToDate(sc.nextLine());
 	}
-	
+
 	public int getPublicationYear() {
 		return publicationYear;
 	}

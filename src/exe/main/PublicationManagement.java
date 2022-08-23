@@ -20,6 +20,9 @@ public class PublicationManagement {
 			System.out.println("_1: Add new book");
 			System.out.println("_2: Add new magazine");
 			System.out.println("_3: Display all publication with publication year and publisher:");
+			System.out.println("_4: Add an author to a specific book:");
+			System.out.println("_5: Display all publication:");
+			System.out.println("_6: Exit!");
 			int function = Integer.parseInt(sc.nextLine());
 			switch (function) {
 			case 1:
@@ -38,6 +41,9 @@ public class PublicationManagement {
 			case 4:
 				addBookAuthor(sc, list);
 				break;
+			case 5:
+				displayAllPublication(list);
+				break;
 			default:
 				isCheck = true;
 				break;
@@ -46,7 +52,6 @@ public class PublicationManagement {
 				break;
 			}
 		} while (true);
-
 	}
 
 	private static void addBookAuthor(Scanner sc, List<Publication> list) {
@@ -88,7 +93,12 @@ public class PublicationManagement {
 				pub.display();
 			}
 		}
+	}
 
+	private static void displayAllPublication(List<Publication> list) {
+		for (Publication pub : list) {
+			pub.display();
+		}
 	}
 
 }
