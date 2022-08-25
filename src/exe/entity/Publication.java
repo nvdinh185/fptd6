@@ -18,7 +18,7 @@ public abstract class Publication {
 	public abstract void input(Scanner sc);
 
 	public String getCommonInfo() {
-		return "publicationYear=" + this.publicationYear + ",publisher=" + this.publisher + ",publicationDate="
+		return "publicationYear=" + this.publicationYear + ", publisher=" + this.publisher + ", publicationDate="
 				+ this.publicationDate;
 	}
 

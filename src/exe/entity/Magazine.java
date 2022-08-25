@@ -12,7 +12,7 @@ public class Magazine extends Publication {
 
 	@Override
 	public void display() {
-		System.out.println("Magazine [" + this.getCommonInfo() + ",author=" + this.author + ", volumn=" + this.volumn
+		System.out.println("Magazine [" + this.getCommonInfo() + ", author=" + this.author + ", volumn=" + this.volumn
 				+ ", edition=" + this.edition + "]");
 	}
 

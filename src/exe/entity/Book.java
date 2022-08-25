@@ -16,8 +16,8 @@ public class Book extends Publication {
 
 	@Override
 	public void display() {
-		System.out.println("Book [" + this.getCommonInfo() + ",author=" + this.isbn + ", volumn=" + this.author
-				+ ", edition=" + this.publicationPlace + "]");
+		System.out.println("Book [" + this.getCommonInfo() + ", isbn=" + this.isbn + ", author=" + this.author
+				+ ", publicationPlace=" + this.publicationPlace + "]");
 	}
 
 	@Override
