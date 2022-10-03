@@ -1,10 +1,10 @@
-package exe.entity;
+package entity;
 
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-import exe.validator.Validation;
+import validator.Validation;
 
 public class Book extends Publication {
 	private String isbn;

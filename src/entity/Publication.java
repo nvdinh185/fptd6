@@ -1,9 +1,9 @@
-package exe.entity;
+package entity;
 
 import java.util.Date;
 import java.util.Scanner;
 
-import exe.common.DateUtil;
+import common.DateUtil;
 
 public abstract class Publication {
 	private int publicationYear;

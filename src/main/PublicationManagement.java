@@ -1,13 +1,13 @@
-package exe.main;
+package main;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
-import exe.entity.Book;
-import exe.entity.Magazine;
-import exe.entity.Publication;
+import entity.Book;
+import entity.Magazine;
+import entity.Publication;
 
 public class PublicationManagement {
 	public static void main(String[] args) {
